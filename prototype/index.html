@@ -1,0 +1,43 @@
+
+<html>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+
+
+    <body>
+        <nav id="nav" style="z-index: 100" class="deep-orange lighten-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                    <a href="#" class="brand-logo">Elodie</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row" style="margin-top: 100px">
+            <div class="col m0 l3"></div>
+            <div class="col m12 l6">
+                <div class="row" id="projects">
+                </div>
+            </div>
+            <div class="col m0 l3"></div>
+        </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+
+    <script>
+        let elem = document.querySelector('#nav');
+        let instance = M.Pushpin.init(elem, {});
+        console.log(instance);
+    </script>
+    <script src="projects_list.js"></script>
+
+</html>
