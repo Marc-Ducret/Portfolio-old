@@ -15,12 +15,32 @@ function generate_project_card(info) {
         '    </div>\n' +
         '\n' +
         '    <div class="card-action">\n' +
-        '        <a href="#">Project Page</a>\n' +
+        '        <a href="?content=project&project=do">Project Page</a>\n' +
         '    </div>\n' +
         '</div>';
     return elem;
 }
 
-for(let i = 0; i < 10; i++) {
-    document.getElementById('projects').appendChild(generate_project_card({name: 'A project', img: 'card1.jpg', details: 'Some details.'}));
+function generate_content() {
+    let content = [];
+    let content_type = new URL(document.location.href).searchParams.get('content');
+    switch(content_type) {
+        case 'projects':
+            for(let i = 0; i < 10; i++) {
+                content.push(generate_project_card({name: 'A project', img: 'card1.jpg', details: 'Some details.'}));
+            }
+            break;
+
+        case 'project':
+            let p = document.createElement('p');
+            p.innerText = 'hello';
+            content.push(p);
+            break;
+    }
+
+    return content;
+}
+
+for(let c of generate_content()) {
+    document.getElementById('content').appendChild(c);
 }
