@@ -54,11 +54,11 @@ function generate_text_page_block(content) {
 function generate_text_page(contents) {
     let container = document.createElement('div');
     let margin_left = document.createElement('div');
-    margin_left.setAttribute('class', 'col l0 xl3');
+    margin_left.setAttribute('class', 'col s0 xl3');
     let margin_right = document.createElement('div');
-    margin_right.setAttribute('class', 'col l0 xl3');
+    margin_right.setAttribute('class', 'col s0 xl3');
     let div = document.createElement('div');
-    div.setAttribute('class', 'col l12 xl6');
+    div.setAttribute('class', 'col s12 xl6');
     for (let content of contents) {
         div.appendChild(generate_text_page_block(content));
     }
@@ -115,7 +115,8 @@ function load_object(url, onload) {
     let req = new XMLHttpRequest();
     req.open('GET', url);
     req.onload = function () {
-        onload(JSON.parse(req.responseText));
+        let json = req.responseText.replace(/[\n\r]/g, ' ');
+        onload(JSON.parse(json));
     };
     req.send();
 }

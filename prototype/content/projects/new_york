@@ -1,9 +1,10 @@
 {
     "id": "new_york",
     "name": "New York",
-    "image": "card1.JPG",
+    "image": "example.jpg",
     "details": "My trip to New York.",
     "page": [
-                {"type": "image", "src": "card1.JPG"}
+                {"type": "text", "title": "New York"},
+                {"type": "image", "src": "example.jpg"}
             ]
 }
