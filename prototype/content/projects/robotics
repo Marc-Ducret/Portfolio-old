@@ -1,0 +1,9 @@
+{
+    "id": "robotics",
+    "name": "Lan Party",
+    "image": "card2.jpg",
+    "details": "The annual Lan Party I organize.",
+    "page": [
+                {"type": "image", "src": "card2.JPG"}
+            ]
+}

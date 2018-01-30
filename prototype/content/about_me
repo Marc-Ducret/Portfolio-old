@@ -1,0 +1,7 @@
+[
+    {"type": "text", "title": "Section", "text": "Some text.<br/> Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text."},
+    {"type": "text", "title": "Conclusion", "text": "That was great!"},
+    {"type": "text", "text": "See ya!"},
+    {"type": "text", "title": "Image"},
+    {"type": "image", "src": "card1.JPG"}
+]
