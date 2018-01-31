@@ -1,3 +1,5 @@
+const COLOR_SCHEME = 'deep-purple';
+
 function generate_project_card(info) {
     let elem = document.createElement('div');
     elem.setAttribute('class', 'col s12 m6');
@@ -8,12 +10,12 @@ function generate_project_card(info) {
         '    </div>\n' +
         '    <div class="card-content">\n' +
         '        <span class="card-title activator grey-text text-darken-4">'
-                    + info.name + '<i class="material-icons right">more_vert</i>' +
+        + info.name + '<i class="material-icons right">more_vert</i>' +
         '        </span>\n' +
         '    </div>\n' +
         '    <div class="card-reveal">\n' +
         '        <span class="card-title grey-text text-darken-4">'
-                    + info.name + '<i class="material-icons right">close</i>' +
+        + info.name + '<i class="material-icons right">close</i>' +
         '        </span>\n' +
         '        <p>' + info.details + '</p>\n' +
         '    </div>\n' +
@@ -30,9 +32,11 @@ function generate_text_page_block(content) {
         case 'text':
             let div = document.createElement('div');
             if (content.title) {
-                let title = document.createElement('h1');
+                let title = document.createElement(content.text ? 'h3' : 'h1');
                 title.innerHTML = content.title;
-                title.setAttribute('class', 'deep-orange-text text-darken-4');
+                title.setAttribute('class', content.text ?
+                    COLOR_SCHEME + '-text text-darken-4' :
+                    COLOR_SCHEME + '-text text-darken-4 center');
                 div.appendChild(title);
             }
             if (content.text) {
@@ -76,7 +80,7 @@ function load_content() {
     };
     let params = new URL(document.location.href).searchParams;
     let content_type = params.get('content');
-    if(!content_type) {
+    if (!content_type) {
         content_type = 'text_page';
         params.set('content', content_type);
         params.set('page', 'home');
@@ -115,7 +119,8 @@ function load_object(url, onload) {
     let req = new XMLHttpRequest();
     req.open('GET', url);
     req.onload = function () {
-        let json = req.responseText.replace(/[\n\r]/g, ' ');
+        let json = req.responseText.replace(/[\n\r]/g, ' ').replace(/@COLOR_SCHEME@/g, COLOR_SCHEME);
+        //TODO more general RegExp (replace @VAR@ with eval(VAR))
         onload(JSON.parse(json));
     };
     req.send();
@@ -134,10 +139,16 @@ function load_objects(urls, onload) {
     }
 }
 
+function init_color_scheme() {
+    let elem = document.getElementById('nav');
+    elem.setAttribute('class', elem.getAttribute('class') + ' ' + COLOR_SCHEME);
+}
+
 function materialize_init() {
     let sel = document.querySelectorAll('.materialboxed');
     if (sel) M.Materialbox.init(sel, {});
 }
 
+init_color_scheme();
 load_content();
 materialize_init();
