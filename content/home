@@ -4,7 +4,7 @@
             <a class='col s4' href='?content=text_page&page=about_me'>
                 <div class='center hoverable'>
                     <i class='large material-icons deep-orange-text text-darken-4'>person</i>
-                    <h5 class='black-text' style='padding-bottom:10px'>About Me</h5>
+                    <h5 class='black-text' style='padding-bottom:10px'>About me</h5>
                 </div>
             </a>
             <a class='col s4' href='?content=text_page&page=resume'>
