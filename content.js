@@ -30,7 +30,7 @@ function generate_text_page_block(content) {
         case 'text':
             let div = document.createElement('div');
             if (content.title) {
-                let title = document.createElement('h1')
+                let title = document.createElement('h1');
                 title.innerHTML = content.title;
                 title.setAttribute('class', 'deep-orange-text text-darken-4');
                 div.appendChild(title);
@@ -135,7 +135,7 @@ function load_objects(urls, onload) {
 }
 
 function materialize_init() {
-    let sel = document.querySelector('.materialboxed');
+    let sel = document.querySelectorAll('.materialboxed');
     if (sel) M.Materialbox.init(sel, {});
 }
 
