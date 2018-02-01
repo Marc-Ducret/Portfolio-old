@@ -21,11 +21,8 @@
                     but having those two positions evolve during a match makes it even deeper (this is one of the
                     things DotA likes do best in my opinion).
                     </p>
-                    <p>
-                    [DotA 2 map]
-                    </p>
                     "},
-                {"type": "image", "src": "original_fps/dota_map.png"},
+                {"type": "image", "src": "original_fps/dota_map.png", "caption": "DotA 2 map"},
                 {"type": "text", "text": "
                     The second idea is to give incentives to stay alive and reward kills without death timers.
                     Instead, like in survival games, a player would drop his gear upon death but respawn quickly
