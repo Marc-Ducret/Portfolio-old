@@ -51,11 +51,13 @@ function generate_text_page_block(content) {
             let img = document.createElement('img');
             img.setAttribute('src', 'content/images/' + content.src);
             img.setAttribute('class', 'responsive-img materialboxed');
-            img.style.marginBottom = '5px';
+            img.style.marginTop = '5px';
             div.appendChild(img);
             if (content.caption) {
                 let caption = document.createElement('h5');
                 caption.setAttribute('class', COLOR_SCHEME + '-text text-lighten-4 center');
+                caption.style.marginBottom = '20px';
+                caption.style.marginTop = '3px';
                 caption.innerHTML = content.caption;
                 div.appendChild(caption);
             }

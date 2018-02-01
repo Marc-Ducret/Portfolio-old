@@ -6,6 +6,7 @@
     "page": [
                 {"type": "text", "title": "New York"},
                 {"type": "text", "title": "Trip", "text": "Some text."},
-                {"type": "image", "src": "example.jpg", "caption": "View of NY"}
+                {"type": "image", "src": "example.jpg", "caption": "View of NY"},
+                {"type": "image", "src": "example.jpg", "caption": "The same view"}
             ]
 }
