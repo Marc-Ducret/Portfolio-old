@@ -28,9 +28,9 @@ function generate_project_card(info) {
 }
 
 function generate_text_page_block(content) {
+    let div = document.createElement('div');
     switch (content.type) {
         case 'text':
-            let div = document.createElement('div');
             if (content.title) {
                 let title = document.createElement(content.text ? 'h3' : 'h1');
                 title.innerHTML = content.title;
@@ -45,14 +45,23 @@ function generate_text_page_block(content) {
                 text.style.textAlign = 'justify';
                 div.appendChild(text);
             }
-            return div;
+            break;
 
         case 'image':
             let img = document.createElement('img');
             img.setAttribute('src', 'content/images/' + content.src);
             img.setAttribute('class', 'responsive-img materialboxed');
-            return img;
+            img.style.marginBottom = '5px';
+            div.appendChild(img);
+            if (content.caption) {
+                let caption = document.createElement('h5');
+                caption.setAttribute('class', COLOR_SCHEME + '-text text-lighten-4 center');
+                caption.innerHTML = content.caption;
+                div.appendChild(caption);
+            }
+            break;
     }
+    return div;
 }
 
 function generate_text_page(contents) {
