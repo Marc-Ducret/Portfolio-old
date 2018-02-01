@@ -159,8 +159,8 @@ function materialize_init() {
     let sel = document.querySelectorAll('.materialboxed');
     if (sel) M.Materialbox.init(sel, {});
     sel = document.querySelectorAll('p a');
-    for(let elem of sel) {
-        elem.setAttribute('class', COLOR_SCHEME+'-text');
+    for (let elem of sel) {
+        elem.setAttribute('class', elem.getAttribute('class') + ' ' + COLOR_SCHEME + '-text');
     }
 }
 
