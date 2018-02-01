@@ -1,4 +1,4 @@
-const COLOR_SCHEME = 'deep-purple';
+const COLOR_SCHEME = 'light-green';
 
 function generate_project_card(info) {
     let elem = document.createElement('div');

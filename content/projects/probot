@@ -13,7 +13,7 @@
                     were overwhelmed with the synchronized networking of physics bodies."},
                 {"type": "text", "title": "2D prototype", "text": "
                     Years later, I got back on the project alone. In the meantime, I learned about
-                    deterministic lockstep and was my solution for networked multiplayer. For the sake
+                    deterministic lockstep and here was my solution for networked multiplayer. For the sake
                     of simplicity, I started with a 2D prototype. <br/>
                     The code is available on <a href='https://github.com/VengeurK/Probot2DPrototype'>GitHub</a>."},
                 {"type": "image", "src": "probot/2Dmenu.png"},
