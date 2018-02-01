@@ -158,6 +158,10 @@ function init_color_scheme() {
 function materialize_init() {
     let sel = document.querySelectorAll('.materialboxed');
     if (sel) M.Materialbox.init(sel, {});
+    sel = document.querySelectorAll('p a');
+    for(let elem of sel) {
+        elem.setAttribute('class', COLOR_SCHEME+'-text');
+    }
 }
 
 init_color_scheme();
