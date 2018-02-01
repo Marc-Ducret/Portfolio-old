@@ -5,7 +5,7 @@
     "details": "My trip to New York.",
     "page": [
                 {"type": "text", "title": "New York"},
-                {"type": "text", "title": "Trip", "text": "Some text."},
+                {"type": "text", "title": "Trip", "text": "Some text. <a href='?'> Home link </a>"},
                 {"type": "image", "src": "example.jpg", "caption": "View of NY"},
                 {"type": "image", "src": "example.jpg", "caption": "The same view"}
             ]
