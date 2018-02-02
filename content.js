@@ -48,11 +48,19 @@ function generate_text_page_block(content) {
             break;
 
         case 'image':
-            let img = document.createElement('img');
-            img.setAttribute('src', 'content/images/' + content.src);
-            img.setAttribute('class', 'responsive-img materialboxed');
-            img.style.marginTop = '5px';
-            div.appendChild(img);
+            div.style.marginTop = '5px';
+            let row = document.createElement('div');
+            row.setAttribute('class', 'row');
+            let srcs = content.src.split(';');
+            let width = 100 / srcs.length + '%';
+            for(let src of srcs) {
+                let img = document.createElement('img');
+                img.setAttribute('src', 'content/images/' + src);
+                img.setAttribute('class', 'responsive-img materialboxed col');
+                img.style.width = width;
+                row.appendChild(img);
+            }
+            div.appendChild(row);
             if (content.caption) {
                 let caption = document.createElement('h5');
                 caption.setAttribute('class', COLOR_SCHEME + '-text text-lighten-4 center');
