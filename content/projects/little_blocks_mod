@@ -12,8 +12,8 @@
                     can exist at a 8th of the size (in each dimension) and most interactions still work."},
                 {"type": "text", "title": "Creations", "text": "
                     This mod enabled countless different creations. Here are some aesthetic creations:"},
-                {"type": "image", "src": "  mincreaft/lbm/creation1.png;
-                                            mincreaft/lbm/creation2.png;
-                                            mincreaft/lbm/creation3.png"}
+                {"type": "image", "src": "  minecraft/lbm/creation1.png;
+                                            minecraft/lbm/creation2.png;
+                                            minecraft/lbm/creation3.png"}
             ]
 }
