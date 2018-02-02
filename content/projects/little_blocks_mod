@@ -14,6 +14,21 @@
                     This mod enabled countless different creations. Here are some aesthetic creations:"},
                 {"type": "image", "src": "  minecraft/lbm/creation1.png;
                                             minecraft/lbm/creation2.png;
-                                            minecraft/lbm/creation3.png"}
+                                            minecraft/lbm/creation3.png"},
+                {"type": "image", "src": "  minecraft/lbm/creation4.png;
+                                            minecraft/lbm/creation5.png;
+                                            minecraft/lbm/creation6.png"},
+                {"type": "text", "text": "
+                    Then it also enabled some pretty complex redstone circuits to be packed in small spaces."},
+                {"type": "image",   "src": "minecraft/lbm/door_front.png;
+                                            minecraft/lbm/door_back.png",
+                                    "caption": "A door entry code"},
+                {"type": "image",   "src": "minecraft/lbm/counter_front.png;
+                                            minecraft/lbm/counter_back.png",
+                                    "caption": "A binary counter with 7 segment display"},
+                {"type": "text", "title": "Success", "text": "
+                    The release of Little Blocks Mod in 2011 was a huge success. Through the years, it received
+                    coverage from various Minecraft's news websites and Youtubers. This resulted in more than
+                    a million downloads and a few thousands euros in ad revenues."}
             ]
 }
