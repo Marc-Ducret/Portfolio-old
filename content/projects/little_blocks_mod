@@ -1,0 +1,19 @@
+{
+    "id": "little_blocks_mod",
+    "name": "Little blocks Mod",
+    "image": "minecraft/lbm/card_image.png",
+    "details": "A Minecraft mod that allow its users to place small blocks that are eight times smaller than normal
+            blocks in every dimension.",
+    "page": [
+                {"type": "text", "title": "Little Blocks Mod"},
+                {"type": "image", "src": "minecraft/lbm/render.png"},
+                {"type": "text", "title": "Concept", "text": "
+                    Little Blocks is a Minecraft mod that enables to place blocks at a small scale. Each block
+                    can exist at a 8th of the size (in each dimension) and most interactions still work."},
+                {"type": "text", "title": "Creations", "text": "
+                    This mod enabled countless different creations. Here are some aesthetic creations:"},
+                {"type": "image", "src": "  mincreaft/lbm/creation1.png;
+                                            mincreaft/lbm/creation2.png;
+                                            mincreaft/lbm/creation3.png"}
+            ]
+}

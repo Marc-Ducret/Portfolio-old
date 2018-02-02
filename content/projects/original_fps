@@ -1,7 +1,7 @@
 {
     "id": "original_fps",
     "name": "Original FPS",
-    "image": "original_fps/character.png",
+    "image": "original_fps/card_image.png",
     "details": "An unfinished game about refreshing the First Person Shooter genre with DotA inspired objectives.",
     "page": [
                 {"type": "text", "title": "Original FPS"},

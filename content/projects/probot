@@ -1,7 +1,7 @@
 {
     "id": "probot",
     "name": "ProBot",
-    "image": "probot/2Deditor.PNG",
+    "image": "probot/card_image.PNG",
     "details": "An unfinished game about designing robots, programming them and having them fight with
                 other players' robots.",
     "page": [
