@@ -54,6 +54,7 @@ function generate_text_page_block(content) {
             let srcs = content.src.split(';');
             let width = 100 / srcs.length + '%';
             for(let src of srcs) {
+                src = src.trim();
                 let img = document.createElement('img');
                 img.setAttribute('src', 'content/images/' + src);
                 img.setAttribute('class', 'responsive-img materialboxed col');
