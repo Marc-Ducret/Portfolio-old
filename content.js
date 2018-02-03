@@ -51,15 +51,19 @@ function generate_text_page_block(content) {
             div.style.marginTop = '5px';
             let row = document.createElement('div');
             row.setAttribute('class', 'row');
+            row.style.margin = '0px';
             let srcs = content.src.split(';');
             let width = 100 / srcs.length + '%';
             for(let src of srcs) {
                 src = src.trim();
                 let img = document.createElement('img');
+                let container = document.createElement('div');
                 img.setAttribute('src', 'content/images/' + src);
-                img.setAttribute('class', 'responsive-img materialboxed col');
-                img.style.width = width;
-                row.appendChild(img);
+                container.setAttribute('class', 'col');
+                container.style.width = width;
+                img.setAttribute('class', 'responsive-img materialboxed');
+                container.appendChild(img);
+                row.appendChild(container);
             }
             div.appendChild(row);
             if (content.caption) {
