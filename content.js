@@ -2,7 +2,7 @@ const COLOR_SCHEME = 'deep-purple';
 
 function generate_project_card(info) {
     let elem = document.createElement('div');
-    elem.setAttribute('class', 'col s12 m6');
+    elem.setAttribute('class', 'col s12 m6 l4');
     elem.innerHTML =
         '<div class="card sticky-action hoverable">\n' +
         '    <div class="card-image waves-effect waves-block waves-light">\n' +
@@ -21,7 +21,7 @@ function generate_project_card(info) {
         '    </div>\n' +
         '\n' +
         '    <div class="card-action">\n' +
-        '        <a href="?content=project&project=' + info.id + '">Project Page</a>\n' +
+        '        <a class="'+COLOR_SCHEME+'-text" href="?content=project&project=' + info.id + '">Project Page</a>\n' +
         '    </div>\n' +
         '</div>';
     return elem;
