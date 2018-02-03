@@ -51,6 +51,7 @@ function generate_text_page_block(content) {
             div.style.marginTop = '5px';
             let row = document.createElement('div');
             row.setAttribute('class', 'row');
+            row.style.margin = '0px';
             let srcs = content.src.split(';');
             let width = 100 / srcs.length + '%';
             for(let src of srcs) {
