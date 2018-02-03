@@ -62,6 +62,7 @@ function generate_text_page_block(content) {
                 container.setAttribute('class', 'col');
                 container.style.width = width;
                 img.setAttribute('class', 'responsive-img materialboxed');
+                img.style.width = '100%';
                 container.appendChild(img);
                 row.appendChild(container);
             }
