@@ -56,10 +56,13 @@ function generate_text_page_block(content) {
             for(let src of srcs) {
                 src = src.trim();
                 let img = document.createElement('img');
+                let container = document.createElement('div');
                 img.setAttribute('src', 'content/images/' + src);
-                img.setAttribute('class', 'responsive-img materialboxed col');
-                img.style.width = width;
-                row.appendChild(img);
+                container.setAttribute('class', 'col');
+                container.style.width = width;
+                img.setAttribute('class', 'responsive-img materialboxed');
+                container.appendChild(img);
+                row.appendChild(container);
             }
             div.appendChild(row);
             if (content.caption) {
