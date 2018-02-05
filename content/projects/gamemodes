@@ -23,7 +23,7 @@
                     Bombermine is when Minecraft and the classic Bomberman game meets. Players can place bombs
                     that explode in lines while destroying obstacles and players on their way. Powerups can
                     be acquired while doing so."},
-                {"type": "image", "src": "minecraft/gamemodes/map.PNG",
+                {"type": "image", "src": "minecraft/gamemodes/map.png",
                                 "caption": "A Bombermine map"},
                 {"type": "image", "src": "minecraft/gamemodes/explode.gif",
                                 "caption": "Powerup that make explosions not stop at first obstacle"},
