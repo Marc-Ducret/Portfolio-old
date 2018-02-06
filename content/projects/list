@@ -5,5 +5,6 @@
     "gamemodes",
     "stealing_cubes",
     "car_trajectory",
-    "cacatoes"
+    "cacatoes",
+    "cpu"
 ]
